@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Creativo de Rodrigo Porres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fondo de videos (múltiples videos) -->
+    <div class="background-videos">
+        <video class="bg-video" src="fondo/fondo1.mp4" autoplay muted loop></video>
+        <video class="bg-video" src="fondo/fondo2.mp4" autoplay muted loop></video>
+        <video class="bg-video" src="fondo/fondo3.mp4" autoplay muted loop></video>
+    </div>
+
+    <!-- Cabecera con el logo y el botón de conectar wallet -->
+    <header>
+        <img src="imagenes/abc.png" alt="Logo de Rodrigo Porres" id="logo">
+        <div id="titulo-container">
+            <h1>El Universo Creativo de Rodrigo Porres</h1>
+            <p>Explora mis proyectos en diseño, branding y comunicación digital</p>
+        </div>
+        <button id="btnConectar" class="wallet-button">Conectar Wallet</button>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="seccion-transparente">
+        <h2>Mis Servicios</h2>
+        <p>Ofrezco diseño gráfico, branding, desarrollo web y más. Contáctame para personalizar tu proyecto.</p>
+    </section>
+
+    <!-- Sección de Proyectos con cuadro transparente -->
+    <section id="proyectos">
+        <div class="titulo-transparente">
+            <h2>Proyectos Destacados</h2>
+        </div>
+
+        <!-- Proyecto 1 -->
+        <div class="proyecto seccion-transparente">
+            <video class="proyecto-video" muted loop>
+                <source src="videos/optimizacion-comunicacion.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            <h3>Optimización de Procesos en Comunicación</h3>
+            <p>Implementé mejoras en los procesos de comunicación para diversas organizaciones...</p>
+            <button class="btn-leer-mas" onclick="mostrarDetalles('detalle1')">Leer más</button>
+            <p id="detalle1" class="detalle-oculto">
+                Durante mi tiempo trabajando con diversas organizaciones de la sociedad civil, optimicé procesos de comunicación para 
+                hacer que la información fluya de manera más eficiente y consistente. Logré reducir tiempos de respuesta y mejorar 
+                la precisión de los mensajes clave mediante técnicas avanzadas de comunicación y gestión de proyectos.
+            </p>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="proyecto seccion-transparente">
+            <video class="proyecto-video" muted loop>
+                <source src="videos/supervision-imagen.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            <h3>Supervisión de Imagen en IEPADES</h3>
+            <p>Supervisé la imagen de esta ONG, asegurando que los materiales reflejaran sus valores...</p>
+            <button class="btn-leer-mas" onclick="mostrarDetalles('detalle2')">Leer más</button>
+            <p id="detalle2" class="detalle-oculto">
+                En IEPADES, supervisé la coherencia de la imagen y los materiales de la ONG en todas las plataformas de comunicación, 
+                desde redes sociales hasta eventos públicos. Implementé estrategias de marca que aseguraron que el mensaje institucional 
+                se mantuviera alineado con sus valores, aumentando la percepción positiva entre los stakeholders y la comunidad.
+            </p>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="proyecto seccion-transparente">
+            <video class="proyecto-video" muted loop>
+                <source src="videos/consultorias.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            <h3>Consultorías para Sociedad Civil</h3>
+            <p>Asesoré en comunicación estratégica a organizaciones como AMMI y CITRADOMZA...</p>
+            <button class="btn-leer-mas" onclick="mostrarDetalles('detalle3')">Leer más</button>
+            <p id="detalle3" class="detalle-oculto">
+                Brindé consultorías de comunicación estratégica a organizaciones como AMMI y CITRADOMZA, ayudando a mejorar su visibilidad 
+                y presencia en sus comunidades. Mis recomendaciones incluyeron técnicas de comunicación digital y campañas de marketing 
+                social que fortalecieron la conexión de estas organizaciones con su audiencia.
+            </p>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="proyecto seccion-transparente">
+            <video class="proyecto-video" muted loop>
+                <source src="videos/ventas-amadeus.mp4" type="video/mp4">
+                Tu navegador no soporta video en HTML5.
+            </video>
+            <h3>Gerencia de Ventas en Corporación Amadeus</h3>
+            <p>Diseñé campañas de marketing y superé objetivos de ventas, logrando récords en desempeño...</p>
+            <button class="btn-leer-mas" onclick="mostrarDetalles('detalle4')">Leer más</button>
+            <p id="detalle4" class="detalle-oculto">
+                En Corporación Amadeus, desempeñé un rol clave en la creación de campañas de marketing y ventas que alcanzaron y superaron 
+                los objetivos de la empresa. Mi enfoque en la innovación y la mejora continua permitió que el equipo rompiera récords de 
+                desempeño, logrando resultados que fortalecieron la posición de la corporación en el mercado inmobiliario.
+            </p>
+        </div>
+    </section>
+
+    <!-- Botón de Pago en Criptomoneda -->
+    <section id="crypto-pago">
+        <h2>Paga con Crypto</h2>
+        <button id="btnPagar">Pagar en Ethereum</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.5.1/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
