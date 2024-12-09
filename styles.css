@@ -105,13 +105,14 @@ header {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 2s ease-in-out; /* Transición más suave */
 }
 
 .bg-video.active {
-    opacity: 1;
+    opacity: 1; /* Solo el video activo es visible */
 }
+
 
 /* Estilos centrados para contenido */
 #servicios, #proyectos, #crypto-pago {
@@ -171,3 +172,4 @@ header {
     color: #555;
     margin-top: 10px;
 }
+
